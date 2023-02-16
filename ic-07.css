@@ -1,3 +1,26 @@
 body {
   font-family: Arial;
 }
+
+.centered {
+    text-align: center;
+}
+
+body {
+    font-family: Arial; 
+    background-color: lavenderblush;
+}
+
+.point {
+  fill: hotpink;
+}
+
+#Acknowledgements {
+  padding-top: 5%;
+  clear: both;
+  text-align: left;
+}
+
+#Acknowledgements h2{
+  text-align:center;
+}

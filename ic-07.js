@@ -1,3 +1,7 @@
+const FRAME_HEIGHT = 200;
+const FRAME_WIDTH = 1500; 
+const MARGINS = {left: 50, right: 50, top: 50, bottom: 50};
+
 // Let's create a visualization with a point for each datum 
 // in the following dataset 
 const data1 = [55000, 48000, 27000, 66000, 90000];
@@ -28,12 +32,12 @@ console.log("Input: 40000, X_SCALE output: " + X_SCALE(40000));
 
 // Now, we can use X_SCALE to plot our points
 FRAME1.selectAll("points")  
-    .data(data2)  
+    .data(data1)  
     .enter()       
     .append("circle")  
       .attr("cx", (d) => { return (X_SCALE(d) + MARGINS.left); }) 
       .attr("cy", MARGINS.top) 
-      .attr("r", 20)
+      .attr("r", 10)
       .attr("class", "point"); 
 
 // We can also use X_SCALE to add an axis to the vis  
